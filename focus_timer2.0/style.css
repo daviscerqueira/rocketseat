@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 1vw, 62.5%);
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+
+    margin: -1px;
+    padding: 0;
+    border: none;
+    appearance: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#mode-toggle {
+    width: 3.2rem;
+    height: 3.2rem;
+    position: fixed;
+    top: 3.2rem;
+    right: 3.2rem;
+    background-color: transparent;
+    background-image: url(images/moon_icon.svg);
+    background-size: 100%;
+    border: none;
+}
+
+main {
+    width: 82rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+#timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer {
+    display: flex;
+    font-family: 'Roboto';
+    font-size: 12.6rem;
+    font-weight: bold;
+    color: #323238;
+}
+
+#controls {
+    width: 32.5rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#controls button {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: transparent;
+    background-size: 100%;
+    border: none;
+}
+
+#play-button {
+    background-image: url(images/play.svg);
+}
+
+#stop-button {
+    background-image: url(images/stop.svg);
+}
+
+#plus-button {
+    background-image: url(images/plus.svg);
+}
+
+#minus-button {
+    background-image: url(images/minus.svg);
+}
+
+#music-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+#music-wrapper button {
+    width: 13.8rem;
+    height: 15.2rem;
+    background-color: #E1E1E6;
+    border: none;
+    border-radius: 2.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#music-wrapper button.clicked {
+    background-color: #022;
+    filter: brightness(5);
+}
+
+#forest {
+    background-image: url(./images/forest.svg);
+}
+
+#rain {
+    background-image: url(./images/rain.svg);
+}
+
+#cafe {
+    background-image: url(./images/cafe.svg);
+}
+
+#fire {
+    background-image: url(./images/fire.svg);
+}

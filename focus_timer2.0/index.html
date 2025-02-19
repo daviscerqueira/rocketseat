@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Focus Timer</title>
+</head>
+<body>
+    <main>
+        <div id="timer-wrapper">
+            <div id="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <section id="controls">
+                <button id="play-button" data-action="toggleRunning">
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+
+                <button id="stop-button" data-action="reset">
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+    
+                <button id="plus-button" data-action="plus">
+                    <span class="sr-only">Ajustar contador</span>
+                </button>
+
+                <button id="minus-button" data-action="minus">
+                    <span class="sr-only">Parar contador</span>
+                </button>
+            </section>
+        </div>
+
+        <div id="music-wrapper">
+            <button id="forest" data-action="forest">
+                <span class="sr-only">Floresta</span>
+            </button>
+
+            <button id="rain" data-action="rain">
+                <span class="sr-only">Chuva</span>
+            </button>
+
+            <button id="cafe" data-action="cafe">
+                <span class="sr-only">Cafeteria</span>
+            </button>
+
+            <button id="fire" data-action="fire">
+                <span class="sr-only">Fogueira</span>
+            </button>
+        </div>
+
+    </main>
+    
+</body>
+<script src="./main.js" type="module"></script>
+</html>

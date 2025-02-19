@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto';
+    background-color: black;
+}
+
+header {
+    height: 12.2rem;
+    padding: 4rem 7.2rem;
+    position: fixed;
+    display: flex;
+    gap: 3.2rem;
+    background-color: transparent;
+}
+
+header a {
+    font-size: 2.4rem;
+    font-weight: 350;
+    color: #C4C4CC;
+    text-decoration: none;    
+}
+
+header a.selected {
+    color: white;
+    font-weight: 600;
+}
+
+#app {
+    height: 100%;
+}
+
+#home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    background-image: url(assets/bg-1.png);
+    background-size: cover;
+}
+
+#home h1,
+#universe h1,
+#exploration h1 {
+    color: white;
+    font-size: 4.8rem;
+}
+
+#home a {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: 1px solid white;
+    border-radius: .5rem;
+}
+
+#universe, 
+#exploration {
+    height: 100%;
+    padding: 15rem;
+    display: flex;
+    align-items: center;
+    background-image: url(assets/bg-2.png);
+    background-size: cover;
+}
+
+#exploration {
+    background-image: url(assets/bg-3.png);
+}
+
+#universe main,
+#exploration main {
+    width: 65rem;
+}
+
+#universe main p,
+#exploration main p {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+}
+

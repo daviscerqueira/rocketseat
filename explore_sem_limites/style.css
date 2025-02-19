@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: max(73rem);
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#astronaut {
+    width: min(100%, 40rem);
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.7rem;
+    margin-bottom: 3.5rem;
+    list-style: none;
+}
+
+h1, legend {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #B52184;
+}
+
+header h2, p {
+    font-size: 2rem;
+    color: #312D64;
+}
+
+main {
+    background: #343193;
+    display: grid;
+    gap: 5rem;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    margin-top: 9.5rem;
+    padding: 5rem 4rem 5rem 4rem;
+}
+
+.window {
+    background: white;
+    padding: 2.6rem;
+    border-radius: 2rem;
+}
+
+.window nav {
+    margin-top: 3.2rem;
+}
+
+.window p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.fieldset-wrapper {
+    padding: 8rem 4rem 8rem 4rem;
+    align-self: center;
+}
+
+form legend {
+    margin-bottom: 4.2rem;
+}
+
+.input-wrapper input, textarea {
+    border-radius: 16px;
+    border: #312D64 1px solid;
+    width: 100%;
+    height: 4.8rem;
+    padding: 1.6rem 1.6rem 1.6rem 5rem;
+    margin-bottom: 2.4rem;
+}
+
+form textarea {
+    height: 10rem;
+    padding: 1.6rem;
+}
+
+form input::placeholder, textarea::placeholder {
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    display: block;
+}
+
+.input-wrapper img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.button {
+    background: #343193;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1.6rem;
+    width: 15rem;
+    height: 4.5rem;
+}
+
+footer {
+    background: #343193;
+    width: 100%;
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stars {
+    width: 0px;
+    height: 0px;
+}
+
+footer p {
+    color: white;
+}
+
+
+* {
+    animation: fadeIn 500ms;
+}
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0%;
+    }    
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    header div > img {
+        bottom: 0px;
+    }
+
+    #astronaut {
+        width: min(100%, 73rem);
+    }
+
+    header ul {
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 5.8rem;
+    }
+
+    header h2 {
+        font-size: 3.2rem;
+    }
+
+    header div {
+        justify-content: center;
+        align-items: baseline;
+        height: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        padding: 6.4rem 11rem 6.4rem 11rem;
+
+        height: 58rem;
+    }
+
+    #message-form {
+        display: flex;
+    }
+
+    .fieldset-wrapper {
+        width: 50%;
+        padding: 10rem;
+    }
+
+    #stars {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+}

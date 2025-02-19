@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-color: #040924;
+    display: grid;
+    place-content: center;
+    font-family: 'Roboto';
+}
+
+.error-popup {
+    width: 100vw;
+    height: 3.6rem;
+    top: 0;
+    background-color: #F03E3E;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    transition: transform .3s;
+}
+
+.error-popup.hide {
+    transform: translateY(-3.6rem);
+}
+
+.popup-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    background-color: rgba(00, 00, 00, .5);
+    transition: .2s;
+}
+
+.popup-wrapper.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#popup {
+    position: relative;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    background-color: white;
+    border-radius: .6rem;
+}
+
+#popup h1 {
+    font-size: 3.2rem;
+    color: #0C3440;
+}
+
+#close-popup {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    border: none;
+    background: none;
+}
+
+#close-popup:hover {
+    scale: 1.1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 42.8rem;
+    background-color: white;
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+main > h1 {
+    font-size: 3.2rem;
+    color: #0C3440;
+    margin-bottom: .8rem;
+}
+
+label {
+    font-size: 1.4rem;
+    color: #00453A;
+}
+
+.input-wrapper input {
+    width: 30rem;
+    height: 5.2rem;
+    padding: 1.6rem;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    color: rgba(73, 80, 87, .5);
+    background-color: #DCE2E9;
+    border: 2px solid rgba(73, 80, 87, .3);
+    border-radius: .4rem;
+    margin-top: .8rem;
+    margin-bottom: 1.6rem;
+    outline: none;
+}
+
+.input-wrapper input:focus {
+    border: 2px solid #02799D;
+    color: #212529;    
+}
+
+#calc-button {
+    width: 30rem;
+    height: 5.2rem;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    background-color: #02799D;
+    border: none;
+    border-radius: .4rem;
+    margin-top: 1.6rem;
+    transition: .2s;
+}
+
+#calc-button:hover {   
+    background-color: #008bb5;
+}

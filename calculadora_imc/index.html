@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="./js/main.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="error-popup hide">Erro</div>
+    <div class="popup-wrapper hide">
+        <div id="popup">
+            <h1>Seu imc é de 00.00</h1>
+            <button id="close-popup"><img src="images/close.svg" alt=""></button>
+        </div>
+    </div>
+    <main>
+        <h1>Cálculo de IMC</h1>
+
+        <form>
+
+            <div class="input-wrapper">
+                <label for="weight">Peso (kg)</label>
+                <input type="text" id="weight" autocomplete="off">
+            </div>
+    
+            <div class="input-wrapper">
+                <label for="height">Altura (m)</label>
+                <input type="text" id="height" autocomplete="off">
+            </div>
+
+            <button type="submit" id="calc-button">Calcular IMC <img src="images/arrow.svg" alt=""></button>
+
+        </form>
+    </main>
+</body>
+</html>
